@@ -31,7 +31,7 @@ public function show(string $id)  // Route model binding mengirim string
         return response()->json(new SpecialistResource($specialist));
     } catch(ModelNotFoundException $e) {
         return response()->json([
-            'message' => 'Specialist not found'
+            'message' => 't found'
         ], 404);
     }
 }
